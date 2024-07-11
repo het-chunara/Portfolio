@@ -1,0 +1,124 @@
+/* Contact.module.css */
+
+/* Container for the Contact page */
+.container {
+    padding: 20px;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  background-color: #f5f5f5;
+
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for the title */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Description styling */
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555; /* Slightly lighter color for the description */
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Form container styling */
+  .formContainer {
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc); /* Gradient background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Max width for form */
+    width: 100%; /* Full width */
+  }
+  
+  /* Form input fields styling */
+  .formInput,
+  .formTextarea {
+    width: 100%; /* Full width */
+    padding: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Form input fields hover and focus effects */
+  .formInput:focus,
+  .formTextarea:focus {
+    border-color: #ff7e5f; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.3); /* Subtle shadow on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Form textarea specific styling */
+  .formTextarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  /* Submit button styling */
+  .submitButton {
+    background-color: #ff7e5f; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Submit button hover effect */
+  .submitButton:hover {
+    background-color: #feb47b; /* Lighten button color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .formContainer {
+      padding: 15px;
+    }
+  
+    .formInput,
+    .formTextarea {
+      font-size: 0.9rem;
+    }
+  
+    .submitButton {
+      font-size: 1rem;
+    }
+  }
+  

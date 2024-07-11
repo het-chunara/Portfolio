@@ -1,0 +1,276 @@
+/* Container for the About page */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  /* padding: 20px; */
+  background-color: #f5f5f5;
+  /* Light background color */
+  color: #333;
+  /* Dark text color */
+}
+
+/* Header section styling */
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  /* White background for the header section */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile image styling */
+.profileImage {
+  border-radius: 50%;
+  /* Circular profile picture */
+  border: 3px solid #ff7e5f;
+  /* Border color matching the theme */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Profile image hover effect */
+.profileImage:hover {
+  transform: scale(1.50);
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  /* Dark color for the title */
+}
+
+/* Description styling */
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+  /* Medium color for the text */
+  margin: 0;
+}
+
+/* Section styling */
+.personalInfo,
+.additionalInfo {
+  width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  /* White background for the sections */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section title styling */
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Info list styling */
+.infoList {
+  list-style: none;
+  padding: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.infoList li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.infoList a {
+  color: #ff7e5f;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.infoList a:hover {
+  color: #feb47b;
+}
+
+/* Skills, Education, Experience styling */
+.skills,
+.education,
+.experience {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* About.module.css */
+
+/* Style for the skills section */
+.skills {
+  font-size: 1.2rem;
+  color: #333;
+  /* Dark color for text */
+  list-style: none;
+  /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.skills ul {
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  /* Light background for each skill */
+  border-radius: 5px;
+  font-weight: bold;
+  color: #333;
+  /* Dark color for the text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.skills li:hover {
+  background-color: #ff7e5f;
+  /* Background color on hover */
+  color: #fff;
+  /* Text color on hover */
+}
+
+.educationItem {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.educationItem strong {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description,
+  .skills,
+  .education,
+  .experience {
+    font-size: 1rem;
+  }
+}
+
+/* Education section styling */
+.education {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Education title styling */
+.educationTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Education items styling */
+.educationItem {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  animation: slideIn 1s ease-out;
+}
+
+.educationItem strong {
+  display: block;
+  font-weight: bold;
+  color: #000000; /* Accent color for labels */
+}
+
+/* Hover effect for education items */
+.educationItem:hover {
+  background-color: #ff7e5f;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* About.module.css */
+
+/* Experience section styling */
+.experience {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #ffffff; /* Light background for readability */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Hover effect for experience section */
+.experience:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Strong tag styling */
+.experience strong {
+  color: #ff8454; /* Accent color for strong text */
+  font-weight: bold;
+}
